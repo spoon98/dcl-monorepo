@@ -10,18 +10,12 @@ describe('AppComponent', () => {
     }).compileComponents();
   });
 
-  it('should render title', () => {
+  it('should render product list', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain(
-      'Welcome inventory'
-    );
-  });
-
-  it(`should have as title 'inventory'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('inventory');
+    expect(
+      compiled.querySelector('dcl-monorepo-product-list')?.textContent
+    ).toContain('product-list works!');
   });
 });
