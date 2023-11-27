@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@dcl-monorepo/orders": ["libs/orders/src/index.ts"],
+      "@dcl-monorepo/products": ["libs/products/src/index.ts"],
+      "@dcl-monorepo/shared-ui": ["libs/shared/ui/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
