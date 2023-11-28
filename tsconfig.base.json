@@ -17,7 +17,9 @@
     "paths": {
       "@dcl-monorepo/orders": ["libs/orders/src/index.ts"],
       "@dcl-monorepo/products": ["libs/products/src/index.ts"],
-      "@dcl-monorepo/shared-ui": ["libs/shared/ui/src/index.ts"]
+      "@dcl-monorepo/shared-ui": ["libs/shared/ui/src/index.ts"],
+      "checkout/Routes": ["apps/checkout/src/app/remote-entry/entry.routes.ts"],
+      "product/Routes": ["apps/product/src/app/remote-entry/entry.routes.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
